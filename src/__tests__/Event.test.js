@@ -1,16 +1,11 @@
 import React from "react";
 import { shallow } from "enzyme";
 import Event from "../Event";
+import { mockData } from "../mock-data";
 
 describe("<Event /> component", () => {
   let EventWrapper;
-  const event = {
-    id: 1,
-    summary: "Event Summary",
-    start: { dateTime: "2023-06-19T10:00:00" },
-    location: "Event Location",
-    description: "Event Description",
-  };
+  const event = mockData;
 
   beforeAll(() => {
     EventWrapper = shallow(<Event event={event} />);
