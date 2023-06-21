@@ -16,7 +16,7 @@ class Event extends Component {
     const { showDetails } = this.state;
 
     return (
-      <div className="Event">
+      <div className="event">
         <h2>{event.summary}</h2>
         <p>{event.start.dateTime}</p>
         <p>{event.location}</p>
